@@ -62,5 +62,60 @@ public class IO {
 			}
 		}
 	}
+	
+    public static int[] createIntArray(int arrLength){
+        while(true){
+            try{
+                int[] intArr = new int[arrLength];
+                for(int i = 0; i < intArr.length; i++){
+                    System.out.println("Bitte geben Sie die " + i + " Ganzzahl im Array jetzt ein: ");
+                    intArr[i] = readInteger();
+                }
+                return intArr;
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * Creates an Double Array in the desired length.
+     * @param arrLength Length of the Array
+     * @return double[]
+     */
+    public static double[] createDoubleArray(int arrLength){
+        while(true){
+            try{
+                double[] doubleArr = new double[arrLength];
+                for(int i = 0; i < doubleArr.length; i++){
+                    System.out.println("Bitte geben Sie die " + i + " Double Zahl im Array jetzt ein: ");
+                    doubleArr[i] = readDouble();
+                }
+                return doubleArr;
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    /**
+     * Creates an String Array in the desired length.
+     * @param arrLength Length of the Array
+     * @return String[]
+     */
+    public static String[] createStringArr(int arrLength){
+        while(true){
+            try{
+                String[] stringArr = new String[arrLength];
+                for(int i = 0; i < stringArr.length; i++){
+                    System.out.println("Bitte geben Sie den " + i + "'ten String im Array jetzt ein: ");
+                    stringArr[i] = readString();
+                }
+                return stringArr;
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+        }
+    }
 }
 
