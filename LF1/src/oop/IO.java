@@ -118,6 +118,45 @@ public class IO {
 		}
 	}
 
+	public static int[] readIntegerArray1DBinaer() throws IOException{
+
+		System.out.print("Wie viele Stellen haben die Binärzahlen maximal? = ");
+
+		int zeilen = readInteger();
+		if(zeilen != 1 || zeilen != 0) {
+		}
+		int[] array = readIntegerArray1D(zeilen);
+
+		return array;
+
+	}
+
+	public static int[] readIntegerArray1DBinaer(int anzahlWerte) throws IOException {
+
+		int[] array = new int[anzahlWerte];
+
+		array = readIntegerArray1D(array);
+
+		return array;
+
+	}
+
+	public static int[] readIntegerArray1DBinaer(int[] array) throws IOException {
+
+		for (int i = 0; i < array.length; i++) {
+
+			System.out.println("Gib die Zahl ziffernweise von Rechts ein: ");
+			
+
+			array[i] = readInteger();
+
+
+
+		}
+
+		return array;
+	}
+	
 	public static int[] readIntegerArray1D() throws IOException{
 
 		System.out.print("Wie viele Werte? ");
@@ -144,7 +183,7 @@ public class IO {
 
 		for (int i = 0; i < array.length; i++) {
 
-			System.out.println("Wer eingeben für [" + i + "]: ");
+			System.out.println("Wert eingeben für [" + i + "]: ");
 
 			array[i] = readInteger();
 
