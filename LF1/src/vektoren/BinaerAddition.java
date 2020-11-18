@@ -48,7 +48,7 @@ public class BinaerAddition {
             }
         }
 
-        //Ergebnisse Ausgeben
+
         System.out.print("Ergebnis: ");
         for(int i: addArr){
             System.out.print(i);
