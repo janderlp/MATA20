@@ -19,9 +19,7 @@ public class BinaerAddition {
         int[] addArr = new int[bin1.length];
         boolean uebertrag = false;
 
-        //Rechnung
         for(int i = bin1.length - 1; i >= 0; i--){
-            //Übertragsrechnung
             if(uebertrag){
                 uebertrag = false;
                 if(bin1[i] == 0){
@@ -35,7 +33,7 @@ public class BinaerAddition {
                 }
             }
 
-            //Rechnung Normal
+
             if(bin1[i] == 0 && bin2[i] == 0){
                 addArr[i] = 0;
             }
