@@ -13,7 +13,7 @@ public class Bubblesort {
 		System.out.print("Wieviele zahlen wollen sie eingeben ? :");
 		int laengezahlen = IO.readInteger();
 
-		int [] zahlen = new int [laengezahlen];
+		double[] zahlen = new double[laengezahlen];
 
 		System.out.println(" ");
 		System.out.println("geben sie nun die zahlen ein : ");
@@ -26,7 +26,7 @@ public class Bubblesort {
 
 			for (int i = 0; i < zahlen.length - 1; i++) {
 				if (zahlen[i] > zahlen[i + 1]) {
-					int c = zahlen[i];
+					double c = zahlen[i];
 					zahlen[i] = zahlen[i + 1];
 					zahlen[i + 1] = c;
 
@@ -35,7 +35,7 @@ public class Bubblesort {
 
 			}
 		}
-		System.out.println("Zahlen in der Reihenfolge : ");
+		System.out.println("Zahlen in aufsteigender Reihenfolge : ");
 		for (int i = 0; i < zahlen.length; i++) {
 			System.out.print(zahlen[i] + "; ");
 		}
