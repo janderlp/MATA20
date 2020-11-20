@@ -12,6 +12,8 @@ public class Lagerbestand {
 		System.out.print("Wie viele Unterschieliche Artikel haben Sie im Lager? ");
 		int arrl = IO.readInteger();
 		
+		System.out.println(" ");
+		
 		String[] artikel = new String[arrl];
 		Double[] preise = new Double[arrl];
 		int[] anzahl = new int[arrl];
