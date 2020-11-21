@@ -49,7 +49,9 @@ public class MehrdimensionaleArraysLernen {
 
 
 		System.out.println("============================");
-
+		
+		//
+		
 		for (int i = 0; i < mehrarr.length; i++) {
 			for (int j = 0; j < mehrarr[i].length; j++) {
 				System.out.println("Der Array an der Stelle [" + i + "][" + j + "] hat den Wert ==> " + mehrarr[i][j]);
@@ -73,7 +75,9 @@ public class MehrdimensionaleArraysLernen {
 		int tiefe = IO.readInteger();
 
 		int[][][] mehrarr = new int[laenge][breite][tiefe];
+		System.out.println("");
 		System.out.println("============================");
+		System.out.println("");
 		for (int i = 0; i < mehrarr.length; i++) {
 			for (int j = 0; j < mehrarr[i].length; j++) {
 				for (int j2 = 0; j2 < mehrarr[i].length; j2++) {
@@ -82,7 +86,12 @@ public class MehrdimensionaleArraysLernen {
 				}
 			}			
 		}
+		
+		//
+		
+		System.out.println("");
 		System.out.println("============================");
+		System.out.println("");
 		for (int i = 0; i < mehrarr.length; i++) {
 			for (int j = 0; j < mehrarr[i].length; j++) {
 				for (int j2 = 0; j2 < mehrarr[i].length; j2++) {
@@ -110,7 +119,9 @@ public class MehrdimensionaleArraysLernen {
 		int vierte = IO.readInteger();
 
 		int[][][][] mehrarr = new int[laenge][breite][tiefe][vierte];
+		System.out.println("");
 		System.out.println("============================");
+		System.out.println("");
 		for (int i = 0; i < mehrarr.length; i++) {
 			for (int j = 0; j < mehrarr[i].length; j++) {
 				for (int j2 = 0; j2 < mehrarr[i].length; j2++) {
@@ -122,17 +133,21 @@ public class MehrdimensionaleArraysLernen {
 			}
 			
 		}
+		System.out.println("");
 		System.out.println("============================");
+		System.out.println("");
+		
+		//
+		
 		for (int i = 0; i < mehrarr.length; i++) {
 			for (int j = 0; j < mehrarr[i].length; j++) {
 				for (int j2 = 0; j2 < mehrarr[i].length; j2++) {
 					for (int j3 = 0; j3 < mehrarr[i].length; j3++) {
-						System.out.println("Der Array an der Stelle [" + i + "][" + j + "][" + j2 + "][" + j3 + "]   hat den Wert ==> " + mehrarr[i][j][j2]);
+						System.out.println("Der Array an der Stelle [" + i + "][" + j + "][" + j2 + "][" + j3 + "]   hat den Wert ==> " + mehrarr[i][j][j2][j3]);
 					}
 				}
 			}
 
 		}
 	}
-
 }
