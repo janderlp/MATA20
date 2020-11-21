@@ -30,7 +30,7 @@ public class MehrdimensionaleArraysLernen {
 		
 		for (int i = 0; i < mehrarr.length; i++) {
 			for (int j = 0; j < mehrarr[i].length; j++) {
-				System.out.println("Der Array an der Stelle :[" + i + "][" + j + "] hat den Wert ==> " + mehrarr[i][j]);
+				System.out.println("Der Array an der Stelle [" + i + "][" + j + "] hat den Wert ==> " + mehrarr[i][j]);
 
 			}
 		}
