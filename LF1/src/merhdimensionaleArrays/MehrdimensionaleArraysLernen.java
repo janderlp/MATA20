@@ -66,7 +66,7 @@ public class MehrdimensionaleArraysLernen {
 			int x2 = IO.readInteger();
 
 			
-			System.out.println(mehrarr[x1][x2]);
+			System.out.println("Der Array an der Stelle [" + x1 + "][" + x2 + "] hat den Wert ==> " + mehrarr[x1][x2]);
 		}else {
 			for (int i = 0; i < mehrarr.length; i++) {
 				for (int j = 0; j < mehrarr[i].length; j++) {
@@ -124,7 +124,7 @@ public class MehrdimensionaleArraysLernen {
 			System.out.print("[x3]");
 			int x3 = IO.readInteger();
 			
-			System.out.println(mehrarr[x1][x2][x3]);
+			System.out.println("Der Array an der Stelle [" + x1 + "][" + x2 + "][" + x3 + "] hat den Wert ==> " + mehrarr[x1][x2][x3]);
 		}else if(wahl.equalsIgnoreCase("Alle") || wahl.equalsIgnoreCase("alle")){
 			for (int i = 0; i < mehrarr.length; i++) {
 				for (int j = 0; j < mehrarr[i].length; j++) {
@@ -194,7 +194,7 @@ public class MehrdimensionaleArraysLernen {
 			System.out.print("[x4]");
 			int x4 = IO.readInteger();
 			
-			System.out.println(mehrarr[x1][x2][x3][x4]);
+			System.out.println("Der Array an der Stelle [" + x1 + "][" + x2 + "][" + x3 + "][" + x4 + "]   hat den Wert ==> " + mehrarr[x1][x2][x3][x4]);
 			
 			
 		}else if(wahl.equalsIgnoreCase("Alle") || wahl.equalsIgnoreCase("alle")){
