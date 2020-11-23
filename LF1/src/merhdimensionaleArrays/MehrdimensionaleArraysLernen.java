@@ -8,17 +8,21 @@ public class MehrdimensionaleArraysLernen {
 
 	public static void main(String[] args) throws IOException {
 		
+		
+		//Ruft die Methode auswahl(null) auf
 		auswahl(null);
 
 	}
 	
+	//Methode zur Auswahl welchen Arrayypen man benutzen will
 	public static void auswahl(String[] args) throws IOException {
 		
 		System.out.println("Wollen sie einen zwei, drei oder vierdimensionalen array erstellen und füllen?");
 		System.out.print("Geben sie nur 2, 3, 4  oder  zwei, drei, vier ein: ");
+		//Liest auf die Frage darüber eine Antwort ein
 		String antwort = IO.readString();
 		
-		
+		//If abfrage zur ermittlung welch Methode der Nutzer aufrufen will
 		if (antwort.equalsIgnoreCase("zwei") || antwort.equalsIgnoreCase("2")) {
 			zweidiarr(antwort);
 		}else if (antwort.equalsIgnoreCase("drei") || antwort.equalsIgnoreCase("3")) {
@@ -28,6 +32,7 @@ public class MehrdimensionaleArraysLernen {
 		}
 	}
 
+	//Methode zur Erstellung und Ausgebung eines Zweidimesionlen Arrays
 	public static void zweidiarr(String antwort) throws IOException {
 
 		System.out.print("Wie lang soll der Mehrdimensionale Array sein?: ");
@@ -37,9 +42,11 @@ public class MehrdimensionaleArraysLernen {
 		System.out.print("Wie breit soll der Array werden?: ");
 		int breite = IO.readInteger();
 
+		//Deklarieren des Arrays + längenzuweisung
 		int[][] mehrarr = new int [laenge][breite];
 		System.out.println("============================");
 
+		//Wert zuweisung des eben Erstellten Arrays
 		for (int i = 0; i < mehrarr.length; i++) {
 			for (int j = 0; j < mehrarr[i].length; j++) {
 				System.out.print("Geben sie für [" + i + "][" + j + "] den Wert ein: ");
@@ -56,8 +63,11 @@ public class MehrdimensionaleArraysLernen {
 		
 		System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
 		System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
+		//Liest auf die Frage darüber eine Antwort ein
 		String wahl = IO.readString();
 				
+		
+		//If abfrage ob man scih nur einen Wert anzeigen lassen will oder alle
 		if (wahl.equalsIgnoreCase("Einen") || wahl.equalsIgnoreCase("einen")) {
 			System.out.println("Geben sie der reihe nach ein welche Stelle sie aufrufen wollen: [x1][x2]");
 			System.out.print("[x1]");
@@ -80,6 +90,7 @@ public class MehrdimensionaleArraysLernen {
 
 	}
 
+	//Methode zur Erstellug uns Ausgebung eines Dreidimensionalen Arrays
 	public static void dreidiarr(String antwort) throws IOException {
 
 		System.out.print("Wie lang soll der Mehrdimensionale Array sein?: ");
@@ -93,10 +104,12 @@ public class MehrdimensionaleArraysLernen {
 		System.out.print("Wie tief soll der Array werden?: ");
 		int tiefe = IO.readInteger();
 
+		//Deklarieren des Arrays + längenzuweisung
 		int[][][] mehrarr = new int[laenge][breite][tiefe];
 		System.out.println("");
 		System.out.println("============================");
 		System.out.println("");
+		//Wertzuweisung des Erstellten Arrays
 		for (int i = 0; i < mehrarr.length; i++) {
 			for (int j = 0; j < mehrarr[i].length; j++) {
 				for (int j2 = 0; j2 < mehrarr[i].length; j2++) {
@@ -114,7 +127,8 @@ public class MehrdimensionaleArraysLernen {
 		System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
 		System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
 		String wahl = IO.readString();
-				
+		
+		//If abfrage ob man scih nur einen Wert anzeigen lassen will oder alle		
 		if (wahl.equalsIgnoreCase("Einen") || wahl.equalsIgnoreCase("einen")) {
 			System.out.println("Geben sie der reihe nach ein welche Stelle sie aufrufen wollen: [x1][x2][x3]");
 			System.out.print("[x1]");
@@ -141,6 +155,7 @@ public class MehrdimensionaleArraysLernen {
 		
 	}
 
+	//Methode zur Erstellug uns Ausgebung eines vierdimensionalen Arrays
 	public static void vierdiarr(String antwort) throws IOException {
 
 		System.out.print("Wie lang soll der Mehrdimensionale Array sein?: ");
@@ -158,10 +173,12 @@ public class MehrdimensionaleArraysLernen {
 		System.out.print("Wie lang soll die 4te stelle im Array werden?: ");
 		int vierte = IO.readInteger();
 
+		//Deklarierung und längenzuweisung ins Arrays
 		int[][][][] mehrarr = new int[laenge][breite][tiefe][vierte];
 		System.out.println("");
 		System.out.println("============================");
 		System.out.println("");
+		//Wertzuweisung des Erstellten Arrays
 		for (int i = 0; i < mehrarr.length; i++) {
 			for (int j = 0; j < mehrarr[i].length; j++) {
 				for (int j2 = 0; j2 < mehrarr[i].length; j2++) {
@@ -182,7 +199,8 @@ public class MehrdimensionaleArraysLernen {
 		System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
 		System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
 		String wahl = IO.readString();
-				
+		
+		//If abfrage ob man scih nur einen Wert anzeigen lassen will oder alle	
 		if (wahl.equalsIgnoreCase("Einen") || wahl.equalsIgnoreCase("einen")) {
 			System.out.println("Geben sie der reihe nach ein welche Stelle sie aufrufen wollen: [x1][x2][x3][x4]");
 			System.out.print("[x1]");
