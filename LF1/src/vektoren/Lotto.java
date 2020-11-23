@@ -56,26 +56,26 @@ public class Lotto {
 		for (int i = 0; i < lotto.length; i++) {
 			lotto[i] = (int) (Math.random() * 49);
 			for(int i2 = 0; i2 < 6; i2++) {
-	            lotto[i2] = (int)(Math.random() * 48) + 1;
-	            for (int j = 0; j < 6; j++) {
-	                if (lotto[i2] == lotto[j]) {
-	                    if (i2 != j) {
-	                        i2 = 0;
-	                    }
-	                }
-	            }
-	        }
+				lotto[i2] = (int)(Math.random() * 48) + 1;
+				for (int j = 0; j < 6; j++) {
+					if (lotto[i2] == lotto[j]) {
+						if (i2 != j) {
+							i2 = 0;
+						}
+					}
+				}
+			}
 			while(lotto[i] == 0 || lotto[i] > 49 || wahl == false){
 				lotto[i] = (int) (Math.random() * 49);
 				if(lotto[i] != 0 || lotto[i] <= 49) {
 					wahl = true;
 				}
 
-		
+
 
 			} 
 		}
-		
+
 		sortieren(lotto);
 		for (int i = 0; i < lotto.length - 1; i++) {
 			System.out.print(lotto[i] + ", ");
@@ -83,19 +83,19 @@ public class Lotto {
 
 		lotto[6] = (int) (Math.random() * 49);
 		System.out.println("");
-				while(lotto[6] == 0 || lotto[6] > 49 || wahl == false){
-				lotto[6] = (int) (Math.random() * 49);
-				if(lotto[6] != 0 || lotto[6] <= 49) {
-					wahl = true;
-				}
-			} 
+		while(lotto[6] == 0 || lotto[6] > 49 || wahl == false){
+			lotto[6] = (int) (Math.random() * 49);
+			if(lotto[6] != 0 || lotto[6] <= 49) {
+				wahl = true;
+			}
+		} 
 
-			System.out.print(lotto[lotto.length - 1]);
-			System.out.println("");
+		System.out.print(lotto[lotto.length - 1]);
+		System.out.println("");
 
 
-
-		}
 
 	}
+
+}
 
