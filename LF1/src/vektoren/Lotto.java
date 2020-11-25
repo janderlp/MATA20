@@ -23,6 +23,14 @@ public class Lotto {
 				}
 			} 
 		}
+		
+		
+		
+		
+		
+		
+		
+		
 		sortieren(lotto);
 		for (int i = 0; i < lotto.length - 1; i++) {
 			System.out.print(lotto[i] + ", ");
