@@ -9,6 +9,11 @@ public class TestIO {
 	String[][] text = IO.readzweidiarrString(null);
 	System.out.println();
 	IO.writezweidiarrString(text);
+	
+	Double[][] text1 = IO.readzweidiarrdouble(null);
+	System.out.println();
+	IO.writeweidiarrdouble(text1);
+	
 	}
 	
 }
