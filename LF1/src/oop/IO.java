@@ -194,7 +194,7 @@ public class IO {
 		return array;
 	}
 	//Methode zur Erstellung und Ausgebung eines Zweidimesionlen Arrays
-	public static void zweidiarrInt(String antwort) throws IOException {
+	public static void zweidiarrInt(String[] args) throws IOException {
 
 		System.out.print("Wie lang soll der Mehrdimensionale Array sein?: ");
 		int laenge = IO.readInteger();
@@ -216,12 +216,6 @@ public class IO {
 
 		}
 
-
-		System.out.println("============================");
-		
-		System.out.println("");		
-		System.out.println("Sie hatten gewählt: " + antwort);
-		
 		System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
 		System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
 		//Liest auf die Frage darüber eine Antwort ein
@@ -251,7 +245,7 @@ public class IO {
 
 	}
 	//Methode zur Erstellung und Ausgebung eines Zweidimesionlen Arrays
-	public static void zweidiarrdouble(String antwort) throws IOException {
+	public static void zweidiarrdouble(String[] args) throws IOException {
 
 		System.out.print("Wie lang soll der Mehrdimensionale Array sein?: ");
 		int laenge = IO.readInteger();
@@ -274,11 +268,6 @@ public class IO {
 		}
 
 
-		System.out.println("============================");
-		
-		System.out.println("");		
-		System.out.println("Sie hatten gewählt: " + antwort);
-		
 		System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
 		System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
 		//Liest auf die Frage darüber eine Antwort ein
@@ -308,7 +297,7 @@ public class IO {
 
 	}
 	//Methode zur Erstellung und Ausgebung eines Zweidimesionlen Arrays
-		public static void zweidiarrString(String antwort) throws IOException {
+		public static void zweidiarrString(String[] args) throws IOException {
 
 			System.out.print("Wie lang soll der Mehrdimensionale Array sein?: ");
 			int laenge = IO.readInteger();
@@ -330,12 +319,6 @@ public class IO {
 
 			}
 
-
-			System.out.println("============================");
-			
-			System.out.println("");		
-			System.out.println("Sie hatten gewählt: " + antwort);
-			
 			System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
 			System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
 			//Liest auf die Frage darüber eine Antwort ein
@@ -632,7 +615,7 @@ public class IO {
 		}
 		
 		//Methode zur Erstellug uns Ausgebung eines vierdimensionalen Arrays
-		public static void vierdiarrDouble(String antwort) throws IOException {
+		public static void vierdiarrDouble(String[] args) throws IOException {
 
 			System.out.print("Wie lang soll der Mehrdimensionale Array sein?: ");
 			int laenge = IO.readInteger();
@@ -665,13 +648,7 @@ public class IO {
 					}
 				}
 				
-			}
-			System.out.println("");
-			System.out.println("============================");
-			
-			System.out.println("");		
-			System.out.println("Sie hatten gewählt: " + antwort);
-			
+			}			
 			System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
 			System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
 			String wahl = IO.readString();
@@ -707,7 +684,7 @@ public class IO {
 		}
 		
 		//Methode zur Erstellug uns Ausgebung eines vierdimensionalen Arrays
-		public static void vierdiarrString(String antwort) throws IOException {
+		public static void vierdiarrString(String[] args) throws IOException {
 
 			System.out.print("Wie lang soll der Mehrdimensionale Array sein?: ");
 			int laenge = IO.readInteger();
@@ -740,13 +717,7 @@ public class IO {
 					}
 				}
 				
-			}
-			System.out.println("");
-			System.out.println("============================");
-			
-			System.out.println("");		
-			System.out.println("Sie hatten gewählt: " + antwort);
-			
+			}			
 			System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
 			System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
 			String wahl = IO.readString();
