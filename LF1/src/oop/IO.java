@@ -319,6 +319,7 @@ public class IO {
 
 			}
 
+
 			System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
 			System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
 			//Liest auf die Frage darüber eine Antwort ein
