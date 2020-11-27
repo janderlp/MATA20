@@ -40,10 +40,24 @@ public class Kino {
 		System.out.print("wieviele Sitze haben sie in einer Reihe? = ");
 		int sitze = IO.readInteger();
 		
-		String[][] saal = new String[reihen][sitze];
+		String[][] saal = new String[reihen + 1][sitze + 1];
 		
-		for (int i = 0; i < saal.length; i++) {
+		saal[0][0] = " ";
+		for (int i = 0; i < 1; i++) {
+			for (int j = 1; j < saal[i].length; j++) {
+				saal[i][j] = "Platz" + j;
+			}
+			
+		}
+		
+		for (int i = 1; i < saal.length; i++) {
 			for (int j = 0; j < saal[i].length; j++) {
+				saal[i][j] = "Reihe " + i + "";
+			}
+		}
+		
+		for (int i = 1; i < saal.length; i++) {
+			for (int j = 1; j < saal[i].length; j++) {
 				saal[i][j] = "O";
 			}
 		}
@@ -52,6 +66,7 @@ public class Kino {
 	public static void anzeigeSaal(String[][] saal){
 		System.out.println("=============================================");
 		System.out.println(" ");
+
 		for (int i = 0; i < saal.length; i++) {
 			for (int j = 0; j < saal[i].length; j++) {
 				System.out.print(saal[i][j] + "\t");
@@ -70,9 +85,9 @@ public class Kino {
 	
 		
 		System.out.println(" ");
-		if (saal[reihe - 1][platz] == "O") {
-			saal[reihe - 1][platz] = "X";
-		}else if(saal[reihe - 1][platz] == "X") {
+		if (saal[reihe][platz] == "O") {
+			saal[reihe][platz] = "X";
+		}else if(saal[reihe][platz] == "X") {
 			System.out.println("Der Platz ist schon Belegt!");
 		}
 		anzeigeSaal(saal);
@@ -87,9 +102,9 @@ public class Kino {
 		System.out.print("Welchen Platz wollen sie in Reihe " + reihe + " Stornieren? = ");
 		int platz = IO.readInteger();
 		
-		if (saal[reihe - 1][platz] == "X") {
-			saal[reihe - 1][platz] = "O";
-		}else if(saal[reihe - 1][platz] == "O") {
+		if (saal[reihe][platz] == "X") {
+			saal[reihe][platz] = "O";
+		}else if(saal[reihe][platz] == "O") {
 			System.out.println("Dieser Platz ist noch nicht belegt, sie können ihn nicht Stornieren");
 		}
 		anzeigeSaal(saal);
