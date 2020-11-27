@@ -13,6 +13,8 @@ public class Kino {
 		anzeigeSaal(saal);
 		do {	
 			System.out.println(" ");
+			System.out.println("=================================");
+			System.out.println(" ");
 			System.out.println("Was wollen sie machen?");
 			System.out.println("Sie haben die Auswahl zwischen: ");
 			System.out.println("(r) für Reservieren");
@@ -39,6 +41,8 @@ public class Kino {
 		
 		System.out.print("wieviele Sitze haben sie in einer Reihe? = ");
 		int sitze = IO.readInteger();
+		
+		System.out.println(" ");
 		
 		String[][] saal = new String[reihen + 1][sitze + 1];
 		
@@ -101,6 +105,7 @@ public class Kino {
 		System.out.println("");
 		System.out.print("Welchen Platz wollen sie in Reihe " + reihe + " Stornieren? = ");
 		int platz = IO.readInteger();
+		System.out.println(" ");
 		
 		if (saal[reihe][platz] == "X") {
 			saal[reihe][platz] = "O";
