@@ -194,7 +194,7 @@ public class IO {
 		return array;
 	}
 	//Methode zur Erstellung und Ausgebung eines Zweidimesionlen Arrays
-	public static void zweidiarrInt(String[] args) throws IOException {
+	public static int[][] readzweidiarrInt(String[] args) throws IOException {
 
 		System.out.print("Wie lang soll der Mehrdimensionale Array sein?: ");
 		int laenge = IO.readInteger();
@@ -215,34 +215,36 @@ public class IO {
 			}
 
 		}
+		return mehrarr;
+		}
+		public static void writezweidiarrint(int[][] mehrarr) throws IOException {
 
-		System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
-		System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
-		//Liest auf die Frage darüber eine Antwort ein
-		String wahl = IO.readString();
-				
-		
-		//If abfrage ob man scih nur einen Wert anzeigen lassen will oder alle
-		if (wahl.equalsIgnoreCase("Einen") || wahl.equalsIgnoreCase("einen")) {
-			System.out.println("Geben sie der reihe nach ein welche Stelle sie aufrufen wollen: [x1][x2]");
-			System.out.print("[x1]");
-			int x1 = IO.readInteger();
-			System.out.print("[x2]");
-			int x2 = IO.readInteger();
-
+			System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
+			System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
+			//Liest auf die Frage darüber eine Antwort ein
+			String wahl = IO.readString();
+					
 			
-			System.out.println("Der Array an der Stelle [" + x1 + "][" + x2 + "] hat den Wert ==> " + mehrarr[x1][x2]);
-		}else {
-			for (int i = 0; i < mehrarr.length; i++) {
-				for (int j = 0; j < mehrarr[i].length; j++) {
-					System.out.println("Der Array an der Stelle [" + i + "][" + j + "] hat den Wert ==> " + mehrarr[i][j]);
+			//If abfrage ob man scih nur einen Wert anzeigen lassen will oder alle
+			if (wahl.equalsIgnoreCase("Einen") || wahl.equalsIgnoreCase("einen")) {
+				System.out.println("Geben sie der reihe nach ein welche Stelle sie aufrufen wollen: [x1][x2]");
+				System.out.print("[x1]");
+				int x1 = IO.readInteger();
+				System.out.print("[x2]");
+				int x2 = IO.readInteger();
 
+				
+				System.out.println("Der Array an der Stelle [" + x1 + "][" + x2 + "] hat den Wert ==> " + mehrarr[x1][x2]);
+			}else {
+				for (int i = 0; i < mehrarr.length; i++) {
+					for (int j = 0; j < mehrarr[i].length; j++) {
+						System.out.println("Der Array an der Stelle [" + i + "][" + j + "] hat den Wert ==> " + mehrarr[i][j]);
+
+					}
 				}
 			}
-		}
-		
-		
-
+			
+			
 	}
 	//Methode zur Erstellung und Ausgebung eines Zweidimesionlen Arrays
 	public static Double[][] readzweidiarrdouble(String[] args) throws IOException {
@@ -268,7 +270,7 @@ public class IO {
 		return mehrarr;
 	}
 
-	public static void writeweidiarrdouble(Double[][] mehrarr) throws IOException {
+	public static void writezweidiarrdouble(Double[][] mehrarr) throws IOException {
 	System.out.println("Wollen sie sich alle Werte anzeigen lassen oder nur einen bestimmten?");
 	System.out.println("Geben sie für alle :  alle;  Alle  ein und wenn sie nur einen wollen:  einen;  Einen");
 	//Liest auf die Frage darüber eine Antwort ein
