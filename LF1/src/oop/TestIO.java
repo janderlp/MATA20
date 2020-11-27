@@ -12,7 +12,12 @@ public class TestIO {
 	
 	Double[][] text1 = IO.readzweidiarrdouble(null);
 	System.out.println();
-	IO.writeweidiarrdouble(text1);
+	IO.writezweidiarrdouble(text1);
+	
+	int[][] tex3 = IO.readzweidiarrInt(null);
+	System.out.println();
+	IO.writezweidiarrint(tex3);
+	
 	
 	}
 	
