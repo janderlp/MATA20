@@ -79,18 +79,7 @@ public class Lieferbeziehungen {
 			}
 			System.out.println("");
 		}
-		int[][] spaltenrechnung = new int [artikel + 1][kunden + 1];
-		for (int i = 0; i < spaltenrechnung.length; i++) {
-			for (int j = 0; j < spaltenrechnung[i].length; j++) {
-				spaltenrechnung[artikel][kunden] = spaltenrechnung[artikel][kunden] + matrixsumme[i][j];
-			}
-			
-		}
-		for (int i = 0; i < spaltenrechnung.length; i++) {
-			for (int j = 0; j < spaltenrechnung.length; j++) {
-				System.out.println(spaltenrechnung[i][j]);
-			}
-		}
+		
 	}
 }
 
