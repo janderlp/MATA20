@@ -79,7 +79,6 @@ public class Lieferbeziehungen {
 			}
 			System.out.println("");
 		}
-		
+		System.out.println("");
 	}
 }
-
